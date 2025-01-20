@@ -2,14 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" />
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -21,15 +17,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -41,29 +37,29 @@
             <div class="contenedor-img">
                 <img src="img/Hero.jpg" alt="">
             </div>
-            <h1>Joaquin Abdel La Rosa Caballero</h1>
-            <h2>Estudiante tecnico en Redes y Seguridad Informatica</h2>
-            <div class="Redes">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-solid fa-square-rss"></i></a>
+            <h1>Joaquin La Rosa</h1>
+            <h2>Tecnico en Redes y Seguridad Informatica</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/JoakoGod"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>
+                <a href="https://www.linkedin.com/in/joaquin-abdel-la-rosa-caballero-4a400b31a"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- SECCION SOBRE MI-->
+    <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, Soy Joaquin La Rosa.</span> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p>
+                <span>
+                    Hola, soy Joaquin La Rosa.
+                </span> 
+                Estoy acostumbrado a gestionar el soporte de TI, gestionar proyectos de TI y apoyar a varios departamentos de ingeniería con herramientas y aplicaciones de TI. Aporto una actitud motivada y la capacidad de establecer relaciones fuertes y productivas con otros miembros de la empresa. Poseo excelentes habilidades de liderazgo de equipo y un verdadero compromiso con la excelencia y la seguridad en el lugar de trabajo.
             </p>
+
             <div class="fila">
-                <!-- Datos personales-->
+                <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
                     <ul>
@@ -72,103 +68,98 @@
                             29-01-2006
                         </li>
                         <li>
-                            <strong>Telefono</strong>
-                            +51 981471327
+                            <strong>Teléfono</strong>
+                            981 471 327
                         </li>
                         <li>
                             <strong>Email</strong>
-                            Joaquin.lrc.09@gmail.com
+                            joaquin.lrc.09@gmail.com
                         </li>
                         <li>
-                            <strong>Website</strong>
-                            Notengo
-                        </li>
-                        <li>
-                            <strong>Direccion</strong>
-                            Ventanilla, Callao, Peru
-                        </li>
-                        <li>
-                            <strong>Cargo actual</strong>
-                            <span>Freelance</span>
-                            <span>Soporte tecnico</span>
+                            <strong>Dirección</strong>
+                            Av Arquitectos 1020, Callao
                         </li>
                     </ul>
                 </div>
 
-                <!-- Intereses -->
+                <!-- intereses -->
                 <div class="col">
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
                             <span>JUEGOS</span>
                         </div>
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
                             <span>MUSICA</span>
                         </div>
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-plane"></i>
                             <span>VIAJAR</span>
                         </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-computer"></i>
-                            <span>PROGRAMAR</span>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
                         </div>
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-person-hiking"></i>
                             <span>DEPORTE</span>
                         </div>
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span>LEER</span>
+                            <span>LIBROS</span>
                         </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-tree"></i>
-                            <span>AMBIENTE</span>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
                         </div>
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-camera"></i>
                             <span>FOTOS</span>
                         </div>
+                        
                     </div>
                 </div>
             </div>
+            <a href="img/CV JOAQUIN_LA_ROSA.pdf" download="CV JOAQUIN_LA_ROSA.pdf">
             <button>
                 Descargar CV <i class="fa-solid fa-download"></i>
-                <span class = "overlay"></span>
+                <span class="overlay"></span>
             </button>
+        </a>
         </div>
     </section>
+
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Skills</h2>
             <div class="fila">
-                <!-- Technical Skills -->
+                <!-- Technical Skill -->
                 <div class="col">
                     <h3>Technical Skills</h3>
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>Basico</span>
+                                <span>75%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>HTML Y CSS</span>
+                        <span>HTML & CSS</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>Basico</span>
+                                <span>89%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Python</span>
+                        <span>Photoshop</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>Intermedio</span>
+                                <span>95%</span>
                             </div>
                         </div>
                     </div>
@@ -176,15 +167,15 @@
                         <span>Wordpress</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>Intermedio</span>
+                                <span>81%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Git</span>
+                        <span>Drupa</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>Intermedio</span>
+                                <span>55%</span>
                             </div>
                         </div>
                     </div>
@@ -201,10 +192,10 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en equipo</span>
+                        <span>Trabajo en Equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>100%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -212,15 +203,15 @@
                         <span>Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>50%</span>
+                                <span>99%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicacion</span>
+                        <span>Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span>65%</span>
                             </div>
                         </div>
                     </div>
@@ -228,7 +219,7 @@
                         <span>Proyect Management</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span>94%</span>
                             </div>
                         </div>
                     </div>
@@ -236,6 +227,7 @@
             </div>
         </div>
     </section>
+
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
@@ -244,21 +236,197 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Redes y seguridad Informatica</h4>
-                        <span class="casa">SENATI</span>
-                        <span class="fecha">2023 - 2025</span>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting 
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a galley of type
-                        </p>
+                        <h4>Secundaria</h4>
+                        <span class="casa">Escuela de Talentos</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Institución educativa de alto rendimiento, donde fui seleccionado por obtener los mejores
+                            resultados académicos en mi región. Durante mis años en la escuela, participé en diversos
+                            proyectos de investigación y obtuve una sólida base en humanidades, programación,
+                            oratoria, etc</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Redes y Seguridad Informatica</h4>
+                        <span class="casa">SENATI</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>Estudiante de Redes y Seguridad Informática. Con un promedio académico sobresaliente,
+                            estoy adquiriendo conocimientos sólidos en protocolos de comunicación, seguridad de la
+                            información y administración de sistemas. Participación en diversos proyectos prácticos
+                            que me han permitido aplicar los conocimientos teóricos y desarrollar habilidades de
+                            resolución de problemas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Director Regional de Recursos Humanos</h4>
+                        <span class="casa"> RIAC </span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Tuve un equipo pequeño de 5 personas a mi cargo, con los cuales me encargaba de manejar
+                            la base de datos de la organización. Analizar el perfil de personas postulantes, hacer las
+                            entrevistas. Ayuda a las áreas de comunicaciones y proyectos para el manejo de sus datos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte Técnico</h4>
+                        <span class="casa">Universidad Nacional de Ingenieria</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Mantenimiento preventivo y correctivo de equipos informaticos en salones de clase.
+                            Actualización de software y resolución de incidencias tecnicas. Gestión de la red y soporte a
+                            usuarios.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Multifuncional</h4>
+                        <span class="casa"> Hard Discount S. A. C.</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Gestión integral de tienda, incluyendo recepción y despacho de mercadería, atención al
+                            cliente, manejo de caja y elaboración de reportes de ventas.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <form id="formulario-contacto" class="col">
+                <input type="text" id="nombre" placeholder="Tú Nombre" required>
+                <input type="tel" id="telefono" placeholder="Número telefónico" required>
+                <input type="email" id="correo" placeholder="Dirección de correo">
+                <input type="text" id="tema" placeholder="Tema">
+                <textarea id="mensaje" rows="10" placeholder="Mensaje" required></textarea>
+                <button type="button" onclick="enviarMensajeWhatsApp()">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </form>
+            <div class="col">
+                <img src="img/ubicacion.png" alt="Ubicación">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Av Arquitectos 1020, AA.HH Las Lomas - Ventanilla
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Llamame: 981 471 327
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: joaquin.lrc.09@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function enviarMensajeWhatsApp() {
+    const nombre = document.getElementById('nombre').value;
+    const telefono = document.getElementById('telefono').value;
+    const correo = document.getElementById('correo').value;
+    const tema = document.getElementById('tema').value;
+    const mensaje = document.getElementById('mensaje').value;
+    const numeroTelefono = "51981471327"; // ¡REEMPLAZA CON TU NÚMERO!
+
+    if (!nombre || !telefono || !mensaje) {
+        alert("Por favor, completa los campos obligatorios (Nombre, Teléfono y Mensaje).");
+        return; // Detiene la ejecución si faltan campos
+    }
+
+    let mensajeWhatsApp = `*Contacto desde el Portafolio*%0A%0A*Nombre:*%20${nombre}%0A*Teléfono:*%20${telefono}%0A*Correo:*%20${correo}%0A*Tema:*%20${tema}%0A*Mensaje:*%20${mensaje}`;
+
+    const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensajeWhatsApp}`;
+
+    window.open(urlWhatsApp, '_blank', 'noopener noreferrer');
+}
+</script>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
